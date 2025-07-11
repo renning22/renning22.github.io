@@ -14,28 +14,40 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.8;
+            line-height: 1.6;
             color: #333;
             background-color: #fdfdfd;
             max-width: 720px;
             margin: 0 auto;
-            padding: 80px 24px;
+            padding: 40px 24px;
             font-weight: 300;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
         }
 
         h1 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 700;
-            margin-bottom: 48px;
+            margin-bottom: 32px;
             color: #111;
             letter-spacing: 0.5px;
         }
 
         .bio {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #333;
-            margin-bottom: 48px;
+            margin-bottom: 32px;
+        }
+
+        .bio p {
+            margin-bottom: 1em;
+        }
+
+        .bio p:last-child {
+            margin-bottom: 0;
         }
 
         .links {
@@ -71,10 +83,16 @@
         @media (max-width: 768px) {
             body {
                 padding: 48px 20px;
+                justify-content: flex-start;
+                min-height: 100%;
             }
 
             h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
+            }
+
+            .bio {
+                font-size: 0.95rem;
             }
         }
     </style>
@@ -83,15 +101,11 @@
     <h1>Ning Ren</h1>
     
     <div class="bio">
-        When I was 10, everything felt impossibly curious. I was fascinated by how computer games were made, but the internet wasn't widespread yet. So I self-taught C programming by reading books, writing cool programs with pure creativity and boundless wonder.
-        <br><br>
-        Years later, after academia and the CS industry, I had learned and grown tremendously. But somewhere along the way, I realized I'd lost that initial spark—that raw curiosity and excitement. My knowledge and experience had grown, yet they paradoxically became the very constraints that restricted my creativity and imagination.
-        <br><br>
-        The Tao Te Ching captures this beautifully: "為道日損，損之又損，以至於無為，無為而無不為"—in pursuing wisdom, we must learn to unlearn, to reduce rather than accumulate, until effortless creation becomes possible again.
-        <br><br>
-        Today, LLM and AI agents represent that unique opportunity—a chance for everything in CS to be reimagined. Software will be created in ways we've never seen before. This website is my attempt to start over, to return to my 10-year-old self with pure freedom of mind, and recreate that sense of wonder.
-        <br><br>
-        As one of my new adventures, I'm founding <a href="https://vibetrading.dev" target="_blank">VibeTrading.dev</a>—a product where trading meets AI agents. Meanwhile, this site will remain the canvas for my other ideas, demos, and creative experiments, especially those that explore how autonomous agents can craft software from scratch.
+        <p>When I was 10, everything felt impossibly curious. I was fascinated by how computer games were made, but the internet wasn't widespread yet. So I self-taught C programming by reading books, writing cool programs with pure creativity and boundless wonder.</p>
+        <p>Years later, after academia and the CS industry, I had learned and grown tremendously. But somewhere along the way, I realized I'd lost that initial spark—that raw curiosity and excitement. My knowledge and experience had grown, yet they paradoxically became the very constraints that restricted my creativity and imagination.</p>
+        <p>The Tao Te Ching captures this beautifully: "為道日損，損之又損，以至於無為，無為而無不為"—in pursuing wisdom, we must learn to unlearn, to reduce rather than accumulate, until effortless creation becomes possible again.</p>
+        <p>Today, LLM and AI agents represent that unique opportunity—a chance for everything in CS to be reimagined. Software will be created in ways we've never seen before. This website is my attempt to start over, to return to my 10-year-old self with pure freedom of mind, and recreate that sense of wonder.</p>
+        <p>As one of my new adventures, I'm founding <a href="https://vibetrading.dev" target="_blank">VibeTrading.dev</a>—a product where trading meets AI agents. Meanwhile, this site will remain the canvas for my other ideas, demos, and creative experiments, especially those that explore how autonomous agents can craft software from scratch.</p>
     </div>
     
     <ul class="links">
