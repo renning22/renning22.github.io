@@ -18,51 +18,20 @@ body {
     flex-direction: column;
 }
 
-/* Nav */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px 0;
-    border-bottom: 1px solid #eee;
-}
-
-.nav-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #111;
-    text-decoration: none;
-}
-
-.nav-links {
-    display: flex;
-    gap: 24px;
-}
-
-.nav-links a {
-    color: #999;
-    text-decoration: none;
-    font-size: 0.88rem;
-    font-weight: 400;
-    transition: color 0.2s ease;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-    color: #111;
-}
-
 /* Main */
 main {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 64px 0;
+    padding: 80px 0 48px;
 }
 
-/* Mission page */
+/* Vision */
+.vision {
+    margin-bottom: 48px;
+}
+
 .vision p {
     font-size: 1.05rem;
     color: #333;
@@ -81,28 +50,26 @@ main {
     margin-top: 0.4em;
 }
 
-.role {
-    margin-top: 48px;
-    font-size: 0.85rem;
-    color: #999;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+/* Portfolio */
+.portfolio {
+    padding-top: 32px;
+    border-top: 1px solid #eee;
+    margin-bottom: 48px;
 }
 
-/* Portfolio page */
-.portfolio-page h1 {
+.portfolio h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #111;
-    margin-bottom: 12px;
+    margin-bottom: 4px;
 }
 
 .portfolio-count {
     font-family: 'Space Mono', monospace;
     font-size: 0.9rem;
     color: #999;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
 }
 
 .grid {
@@ -137,20 +104,24 @@ main {
     line-height: 1.6;
 }
 
-/* About page */
-.about-page h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: #111;
-    margin-bottom: 32px;
+/* Gateway */
+.gateway {
+    padding-top: 32px;
+    border-top: 1px solid #eee;
 }
 
-.about-page .bio p {
-    font-size: 1.05rem;
-    color: #333;
-    margin-bottom: 1.2em;
-    line-height: 1.8;
+.gateway p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.7;
+}
+
+.gateway code {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85rem;
+    color: #111;
+    background: #f5f5f5;
+    padding: 2px 6px;
 }
 
 /* Footer */
@@ -159,21 +130,18 @@ footer {
     border-top: 1px solid #eee;
 }
 
-.footer-links {
-    list-style: none;
-    display: flex;
-    gap: 24px;
+.bio-line {
+    font-size: 0.88rem;
+    color: #666;
 }
 
-.footer-links a {
+.bio-line a {
     color: #111;
     text-decoration: none;
-    font-size: 0.88rem;
-    font-weight: 400;
     position: relative;
 }
 
-.footer-links a::after {
+.bio-line a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -184,7 +152,7 @@ footer {
     transition: width 0.3s ease;
 }
 
-.footer-links a:hover::after {
+.bio-line a:hover::after {
     width: 100%;
 }
 
@@ -194,29 +162,17 @@ footer {
         padding: 0 20px;
     }
 
-    nav {
-        padding: 24px 0;
-    }
-
-    .nav-name {
-        font-size: 1.1rem;
-    }
-
-    .nav-links {
-        gap: 16px;
-    }
-
     main {
-        padding: 40px 0;
+        padding: 48px 0 40px;
+        justify-content: flex-start;
     }
 
     .vision p {
         font-size: 0.98rem;
     }
 
-    .portfolio-page h1,
-    .about-page h1 {
-        font-size: 1.8rem;
+    .portfolio h2 {
+        font-size: 1.5rem;
     }
 
     .grid {
