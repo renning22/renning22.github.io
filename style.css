@@ -27,12 +27,8 @@ main {
     padding: 80px 0 48px;
 }
 
-/* Agent section */
-.agent-section {
-    margin-bottom: 48px;
-}
-
-.agent-section h1 {
+/* Index page */
+h1 {
     font-family: 'Space Mono', monospace;
     font-size: 2rem;
     font-weight: 400;
@@ -50,7 +46,7 @@ main {
     overflow-x: auto;
 }
 
-.agent-section h2 {
+h2 {
     font-size: 0.75rem;
     color: #999;
     letter-spacing: 2px;
@@ -88,12 +84,7 @@ main {
     font-style: italic;
 }
 
-/* Human section */
-.human-section {
-    padding-top: 32px;
-    border-top: 1px solid #eee;
-}
-
+/* Human page */
 .section-label {
     font-size: 0.75rem;
     color: #999;
@@ -102,7 +93,7 @@ main {
     margin-bottom: 24px;
 }
 
-.human-section p {
+.human-page p {
     font-size: 1.05rem;
     color: #333;
     margin-bottom: 1.2em;
@@ -160,11 +151,11 @@ footer {
         justify-content: flex-start;
     }
 
-    .agent-section h1 {
+    h1 {
         font-size: 1.5rem;
     }
 
-    .human-section p {
+    .human-page p {
         font-size: 0.98rem;
     }
 }
