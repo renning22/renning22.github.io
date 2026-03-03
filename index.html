@@ -3,203 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ning Ren — 1,000 AI Agent Companies</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@300;400&family=Space+Mono&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fdfdfd;
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 80px 24px 48px;
-            font-weight: 300;
-        }
-
-        /* Hero */
-        .hero {
-            margin-bottom: 64px;
-        }
-
-        h1 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 3rem;
-            font-weight: 700;
-            color: #111;
-            letter-spacing: 0.5px;
-            margin-bottom: 24px;
-        }
-
-        .mission {
-            font-size: 1.15rem;
-            color: #111;
-            margin-bottom: 16px;
-            line-height: 1.7;
-        }
-
-        .role {
-            font-size: 0.9rem;
-            color: #666;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        /* Counter */
-        .counter {
-            margin-bottom: 64px;
-        }
-
-        .counter-number {
-            font-family: 'Space Mono', monospace;
-            font-size: 3.5rem;
-            color: #111;
-            letter-spacing: 2px;
-        }
-
-        .counter-label {
-            font-size: 0.85rem;
-            color: #666;
-            margin-top: 4px;
-        }
-
-        /* Portfolio */
-        .portfolio {
-            margin-bottom: 64px;
-        }
-
-        .portfolio h2 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #111;
-            margin-bottom: 24px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .card {
-            border: 1px solid #eee;
-            padding: 24px;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            transition: box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-        }
-
-        .card-name {
-            font-weight: 400;
-            font-size: 1rem;
-            color: #111;
-            margin-bottom: 8px;
-        }
-
-        .card-desc {
-            font-size: 0.88rem;
-            color: #666;
-            line-height: 1.6;
-        }
-
-        /* Footer */
-        .footer {
-            padding-top: 32px;
-            border-top: 1px solid #eee;
-        }
-
-        .footer-links {
-            list-style: none;
-            display: flex;
-            gap: 24px;
-        }
-
-        .footer-links a {
-            color: #111;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 400;
-            position: relative;
-        }
-
-        .footer-links a::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            width: 0%;
-            height: 1px;
-            background-color: currentColor;
-            transition: width 0.3s ease;
-        }
-
-        .footer-links a:hover::after {
-            width: 100%;
-        }
-
-        /* Mobile */
-        @media (max-width: 768px) {
-            body {
-                padding: 48px 20px 40px;
-            }
-
-            h1 {
-                font-size: 2.2rem;
-            }
-
-            .mission {
-                font-size: 1.05rem;
-            }
-
-            .counter-number {
-                font-size: 2.5rem;
-            }
-
-            .grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <title>Ning Ren</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Inter:wght@300;400&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="hero">
-        <h1>Ning Ren</h1>
-        <p class="mission">Creating 1,000 companies built and run entirely by AI agents.</p>
-        <p class="role">Investor · Advisor · Orchestrator</p>
-    </section>
-
-    <section class="counter">
-        <div class="counter-number">2 / 1,000</div>
-        <p class="counter-label">companies launched</p>
-    </section>
-
-    <section class="portfolio">
-        <h2>Portfolio</h2>
-        <div class="grid">
-            <a class="card" href="https://vibetrading.dev" target="_blank">
-                <div class="card-name">VibeTrading</div>
-                <p class="card-desc">Making profitable trading strategies accessible to everyone through AI agents.</p>
-            </a>
-            <a class="card" href="https://trajrl.com" target="_blank">
-                <div class="card-name">TrajectoryRL</div>
-                <p class="card-desc">Building a decentralized marketplace where AI agents compete to solve real-world decision problems.</p>
-            </a>
+    <nav>
+        <a href="/" class="nav-name">Ning Ren</a>
+        <div class="nav-links">
+            <a href="/" class="active">Mission</a>
+            <a href="/portfolio.html">Portfolio</a>
+            <a href="/about.html">About</a>
         </div>
-    </section>
+    </nav>
 
-    <footer class="footer">
+    <main class="mission-page">
+        <section class="vision">
+            <p>Human progress has always been measured by one thing: how much a single mind can leverage.</p>
+            <p>We invented math to compress the universe into symbols. We wrote code to turn thought into machinery. We built search engines to make all human knowledge instantly accessible.</p>
+            <p>Each leap was a new layer of abstraction — a way for one person to do what previously took thousands.</p>
+            <p>AI agents are the next layer.</p>
+            <p>Not tools that wait for instructions, but autonomous workers that reason, adapt, and execute. When thousands of digital workers and entire companies can be orchestrated by a single person, we don't just improve productivity — we redefine what one human life can build.</p>
+            <p class="vision-cta">I'm creating 1,000 companies built and run entirely by AI agents.</p>
+        </section>
+
+        <div class="role">Investor · Advisor · Orchestrator</div>
+    </main>
+
+    <footer>
         <ul class="footer-links">
             <li><a href="https://github.com/renning22" target="_blank">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/renning22/" target="_blank">LinkedIn</a></li>
