@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ning Ren</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <title>Ning Ren — 1,000 AI Agent Companies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@300;400&family=Space+Mono&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -19,53 +19,122 @@
             background-color: #fdfdfd;
             max-width: 720px;
             margin: 0 auto;
-            padding: 40px 24px;
+            padding: 80px 24px 48px;
             font-weight: 300;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            min-height: 100vh;
+        }
+
+        /* Hero */
+        .hero {
+            margin-bottom: 64px;
         }
 
         h1 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 3rem;
             font-weight: 700;
-            margin-bottom: 32px;
             color: #111;
             letter-spacing: 0.5px;
+            margin-bottom: 24px;
         }
 
-        .bio {
+        .mission {
+            font-size: 1.15rem;
+            color: #111;
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+
+        .role {
+            font-size: 0.9rem;
+            color: #666;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Counter */
+        .counter {
+            margin-bottom: 64px;
+        }
+
+        .counter-number {
+            font-family: 'Space Mono', monospace;
+            font-size: 3.5rem;
+            color: #111;
+            letter-spacing: 2px;
+        }
+
+        .counter-label {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        /* Portfolio */
+        .portfolio {
+            margin-bottom: 64px;
+        }
+
+        .portfolio h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 24px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #eee;
+            padding: 24px;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .card-name {
+            font-weight: 400;
             font-size: 1rem;
-            color: #333;
-            margin-bottom: 32px;
+            color: #111;
+            margin-bottom: 8px;
         }
 
-        .bio p {
-            margin-bottom: 1em;
+        .card-desc {
+            font-size: 0.88rem;
+            color: #666;
+            line-height: 1.6;
         }
 
-        .bio p:last-child {
-            margin-bottom: 0;
+        /* Footer */
+        .footer {
+            padding-top: 32px;
+            border-top: 1px solid #eee;
         }
 
-        .links {
+        .footer-links {
             list-style: none;
             display: flex;
             gap: 24px;
-            justify-content: flex-start;
         }
 
-        .links a {
+        .footer-links a {
             color: #111;
             text-decoration: none;
-            font-size: 1rem;
-            position: relative;
+            font-size: 0.9rem;
             font-weight: 400;
+            position: relative;
         }
 
-        .links a::after {
+        .footer-links a::after {
             content: '';
             position: absolute;
             left: 0;
@@ -76,38 +145,65 @@
             transition: width 0.3s ease;
         }
 
-        .links a:hover::after {
+        .footer-links a:hover::after {
             width: 100%;
         }
 
+        /* Mobile */
         @media (max-width: 768px) {
             body {
-                padding: 48px 20px;
-                justify-content: flex-start;
-                min-height: 100%;
+                padding: 48px 20px 40px;
             }
 
             h1 {
                 font-size: 2.2rem;
             }
 
-            .bio {
-                font-size: 0.95rem;
+            .mission {
+                font-size: 1.05rem;
+            }
+
+            .counter-number {
+                font-size: 2.5rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <h1>Ning Ren</h1>
-    
-    <div class="bio">
-        <p>Vide coding since 2011.</p>
-        <p>I'm founding <a href="https://vibetrading.dev" target="_blank">VibeTrading.dev</a>—where trading meets AI agents. This site will showcase my ideas and experiments exploring how autonomous agents can craft software from scratch.</p>
-    </div>
-    
-    <ul class="links">
-        <li><a href="https://github.com/renning22" target="_blank">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/renning22/" target="_blank">LinkedIn</a></li>
-    </ul>
+    <section class="hero">
+        <h1>Ning Ren</h1>
+        <p class="mission">Creating 1,000 companies built and run entirely by AI agents.</p>
+        <p class="role">Investor · Advisor · Orchestrator</p>
+    </section>
+
+    <section class="counter">
+        <div class="counter-number">2 / 1,000</div>
+        <p class="counter-label">companies launched</p>
+    </section>
+
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid">
+            <a class="card" href="https://vibetrading.dev" target="_blank">
+                <div class="card-name">VibeTrading</div>
+                <p class="card-desc">Making profitable trading strategies accessible to everyone through AI agents.</p>
+            </a>
+            <a class="card" href="https://trajrl.com" target="_blank">
+                <div class="card-name">TrajectoryRL</div>
+                <p class="card-desc">Building a decentralized marketplace where AI agents compete to solve real-world decision problems.</p>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <ul class="footer-links">
+            <li><a href="https://github.com/renning22" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/renning22/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
